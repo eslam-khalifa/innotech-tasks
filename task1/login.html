@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8" />
+        <title>تسجيل الدخول</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
+        
+        <!-- Website Icon -->
+        <link
+            rel="icon"
+            href="assets/user-regular.svg"
+            type="image/x-icon"
+        />
+    </head>
+
+    <body class="d-flex flex-column justify-content-between min-vh-100" style="direction: rtl; text-align: right; font-family: Tahoma, sans-serif;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">نظام الطلاب</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse flex-row-reverse"
+                    id="navbarNav"
+                >
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                        <a class="nav-link" href="about.html">عن النظام</a>
+                        <a class="nav-link" href="services.html">الخدمات</a>
+                        <a class="nav-link" href="contact.html">التواصل</a>
+                        <a class="nav-link active" href="login.html">تسجيل الدخول</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container">
+            <h2 class="mb-5 text-primary text-center">تسجيل الدخول</h2>
+
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">اسم المستخدم</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        placeholder="أدخل اسم المستخدم"
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="••••••"
+                    />
+                </div>
+
+                <button type="submit" class="btn btn-primary">دخول</button>
+            </form>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-light text-center py-3">
+            <small>© 2025 جميع الحقوق محفوظة - نظام إدارة شؤون الطلاب</small>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
